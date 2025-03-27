@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <div
+        style="
+          display: flex;
+          font-weight: bold;
+          flex-direction: row;
+          width: 100%;
+          color: #ff6b82;
+        "
+      >
+        <hr style="border: 1px solid #ccc; width: 100px" />
+        YAY! It's BOGO
+        <hr style="border: 1px solid #ccc; width: 100px" />
+      </div>
+
+      <div class="box" onclick="toggleBox(this)">
+        <div class="upper-card">
+          <div class="upper-card-radio">
+            <input type="radio" id="Unit_first" name="Unit" value="1" />
+            <div class="label-part">
+              <div class="label-div">
+                <label>1 Unit</label>
+                <p>10% off</p>
+              </div>
+              <div>Standard Price</div>
+            </div>
+          </div>
+          <div class="price-div">
+            <p id="p1">$10.00 USD</p>
+            <p id="p2">$24.00 USD</p>
+          </div>
+        </div>
+        <br />
+        <div class="options">
+          <div class="options-size">
+            <label style="margin-left: 20px">size</label>
+            <div
+              class="size-dropdown-div"
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              <label style="font-size: 14px">#1</label>
+              <select name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+          </div>
+          <div class="options-color">
+            <label style="margin-left: 8px">colour</label>
+            <select class="color-dropdown" name="color">
+              <option>colour</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+        </div>
+        <div class="options">
+          <div style="display: flex; flex-direction: row; align-items: center">
+            <label style="font-size: 14px">#2</label>
+            <select class="size-dropdown" name="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <select class="color-dropdown" name="color">
+            <option>colour</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Purple">Purple</option>
+            <option value="Orange">Orange</option>
+          </select>
+        </div>
+      </div>
+      <div class="box" onclick="toggleBox(this)" style="position: relative">
+        <div class="upper-card">
+          <div class="upper-card-radio">
+            <input type="radio" id="Unit_first" name="Unit" value="2" />
+            <div class="label-part">
+              <div class="label-div">
+                <label>2 Unit</label>
+                <p>20% off</p>
+              </div>
+            </div>
+          </div>
+          <div class="price-div">
+            <p id="p1">$18.00 USD</p>
+            <p id="p2">$24.00 USD</p>
+          </div>
+        </div>
+        <br />
+        <div class="options">
+          <div class="options-size">
+            <label style="margin-left: 20px">size</label>
+            <div
+              class="size-dropdown-div"
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              <label style="font-size: 14px">#1</label>
+              <select name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+          </div>
+          <div class="options-color">
+            <label style="margin-left: 8px">colour</label>
+            <select class="color-dropdown" name="color">
+              <option>colour</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+        </div>
+        <div class="options">
+          <div style="display: flex; flex-direction: row; align-items: center">
+            <label style="font-size: 14px">#2</label>
+            <select class="size-dropdown" name="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <select class="color-dropdown" name="color">
+            <option>colour</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Purple">Purple</option>
+            <option value="Orange">Orange</option>
+          </select>
+        </div>
+        <div class="flag">
+          <div class="title">Most Popular</div>
+        </div>
+      </div>
+      <div class="box" onclick="toggleBox(this)">
+        <div class="upper-card">
+          <div class="upper-card-radio">
+            <input type="radio" id="Unit_first" name="Unit" value="3" />
+            <div class="label-part">
+              <div class="label-div">
+                <label>3 Unit</label>
+                <p>30% off</p>
+              </div>
+            </div>
+          </div>
+          <div class="price-div">
+            <p id="p1">$24.00 USD</p>
+            <p id="p2">$24.00 USD</p>
+          </div>
+        </div>
+        <br />
+        <div class="options">
+          <div class="options-size">
+            <label style="margin-left: 20px">size</label>
+            <div
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              <label style="font-size: 14px">#1</label>
+              <select name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+          </div>
+          <div class="options-color">
+            <label style="margin-left: 8px">colour</label>
+            <select class="color-dropdown" name="color">
+              <option>colour</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </div>
+        </div>
+        <div class="options">
+          <div style="display: flex; flex-direction: row; align-items: center">
+            <label style="font-size: 14px">#2</label>
+            <select class="size-dropdown" name="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <select class="color-dropdown" name="color">
+            <option>colour</option>
+            <option value="red">Yellow</option>
+            <option value="blue">Purple</option>
+            <option value="green">Orange</option>
+          </select>
+        </div>
+      </div>
+      <div class="delivery-container">
+        <p style="font-weight: bold; color: #ff6b82">Free Delivery</p>
+        <p style="font-weight: bold; margin-right: 20px">Total: $18.00 USD</p>
+      </div>
+      <button class="addToCart-button">+ Add To Cart</button>
+    </div>
+  </body>
+</html>
